@@ -56,9 +56,9 @@ section{padding:clamp(88px,11vw,156px) 0}
 
 /* Hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:0 0 clamp(64px,10vh,112px);overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url(img/otel.jpg) center 35%/cover no-repeat;transform:scale(1.06);animation:drift 18s ease-out forwards}
+.hero-bg{position:absolute;inset:0;background:url(img/banner.jpg) 30% 60%/cover no-repeat;transform:scale(1.06);animation:drift 18s ease-out forwards}
 @keyframes drift{to{transform:scale(1)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,36,54,.55) 0%,rgba(11,36,54,.06) 34%,rgba(11,36,54,.84) 100%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(11,36,54,.6) 0%,rgba(11,36,54,0) 60%),linear-gradient(180deg,rgba(11,36,54,.55) 0%,rgba(11,36,54,.22) 38%,rgba(11,36,54,.84) 100%)}
 .hero .wrap{position:relative;z-index:1;width:100%}
 .hero .eyebrow{color:var(--gold-soft)}
 .hero h1{font-size:clamp(3.2rem,8vw,6.8rem);margin:.22em 0 .32em auto;max-width:12ch;text-align:right;text-shadow:0 2px 30px rgba(0,0,0,.18)}
