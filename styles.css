@@ -149,7 +149,7 @@ body.lb-lock{overflow:hidden}
 
 /* Contact / CTA */
 /* Panorama background: shown full width at its own ratio (1400x415), never cropped or stretched */
-.cta{--pano-h:calc(100vw * 415 / 1400);position:relative;color:#fff;text-align:center;overflow:hidden;isolation:isolate;aspect-ratio:1400/415;display:flex;align-items:center;padding:clamp(40px,4vw,64px) 0;background:var(--sea-deep)}
+.cta{--pano-h:calc(100vw * 415 / 1400);position:relative;color:#fff;text-align:center;overflow:hidden;isolation:isolate;min-height:var(--pano-h);display:flex;align-items:center;padding:clamp(40px,4vw,64px) 0;background:var(--sea-deep)}
 .cta .wrap{width:100%}
 .cta::before{content:"";position:absolute;inset:0;z-index:-2;background:url(img/deniz-panorama.jpg) center top/100% auto no-repeat}
 /* Darkens the photo for legible text; if content is taller than the photo, the area below continues in solid sea-deep */
