@@ -60,3 +60,12 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') show(idx - 1);
   if (e.key === 'ArrowRight') show(idx + 1);
 });
+
+// Floating call button: show only after the hero call button leaves the screen
+const fab = document.querySelector('.call-fab');
+const heroCall = document.querySelector('.hero .btn-gold');
+if (fab && heroCall && 'IntersectionObserver' in window) {
+  new IntersectionObserver(([e]) => fab.classList.toggle('show', !e.isIntersecting)).observe(heroCall);
+} else if (fab) {
+  fab.classList.add('show');
+}
