@@ -128,6 +128,8 @@ section{padding:clamp(88px,11vw,156px) 0}
 .g-grid button:hover img{transform:scale(1.04)}
 .g-grid .tall{grid-row:span 2}
 .g-grid .wide{grid-column:span 2}
+/* Keep the lounger and guest in frame when this photo is cropped to a wide tile */
+.g-grid img[src="img/havuz.jpg"]{object-position:center 75%}
 .lightbox{position:fixed;inset:0;z-index:100;background:rgba(6,20,31,.95);display:none;align-items:center;justify-content:center;padding:24px}
 .lightbox.open{display:flex}
 .lightbox img{max-height:86vh;max-width:min(1200px,100%);border-radius:8px;box-shadow:0 30px 80px -20px rgba(0,0,0,.6)}
